@@ -9,6 +9,7 @@ condb()
 const port = process.env.PORT || 5000
 
 // app.use(JSON.stringify())
+// Gulzar
 app.get('/', (req, res) => {
     res.send("hello this gullu")
 })
