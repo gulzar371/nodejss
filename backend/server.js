@@ -24,10 +24,13 @@ app.use("/api/student", require("./routs/studentRoutes/studentRoutes"))
 app.use("/api/subject", require("./routs/studentRoutes/studentsubRoutes"))
 app.use("/api/country", require("./routs/studentRoutes/studentcountryRouter"))
 app.use('/api/singup', require('./routs/singuprouts'))
-app.use('/api/profile',require('./routs/profilerouts'))
+app.use('/api/profile', require('./routs/profilerouts'))
+app.use('/api/employ', require("./routs/employrouts"))
+app.use('/api/allapi', require("./routs/deshbordrouts"))
+app.use('/api/addcart', require("./routs/Addcarrouts"))
+app.use('/api/usrr',require("./routs/userroutss"))
 
-app.use('/api/employ',require("./routs/employrouts"))
-
+app.use('/api/carproduct',require("./routs/carproductrouts/carprdtrouts"))
 
 
 
