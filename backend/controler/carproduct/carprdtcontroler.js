@@ -34,6 +34,9 @@ const postaddcard =  asyncHandler(async (req, res) => {
     res.status(200).json(data)
 })
 
+// const deletaddcar=asyncHandler(async (req, res) =>{
+
+// }
 
 
 module.exports = {

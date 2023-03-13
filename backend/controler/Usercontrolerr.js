@@ -7,7 +7,7 @@ const getusr = async (req,res)=>{
             res.status(404).json({error:"error is not found"})
         }
         res.status(200).json(data)
-    }catch {
+    }catch(error) {
         res.status(404).json(error)
     }
 }
@@ -35,7 +35,7 @@ const postusr = async (req,res)=>{
 
 const findpost =  async ( req,res) =>{
     try{
-         // const {profile,student,employ,product} = req.body
+         const {profile,student,employ,product} = req.body
          let data = await users.findById(req.params._id)
          if(!data){
             res.status(404).json({error:"data is missing"})

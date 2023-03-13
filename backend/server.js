@@ -29,8 +29,9 @@ app.use('/api/employ', require("./routs/employrouts"))
 app.use('/api/allapi', require("./routs/deshbordrouts"))
 app.use('/api/addcart', require("./routs/Addcarrouts"))
 app.use('/api/usrr',require("./routs/userroutss"))
-
+app.use('/api/prodect',require("./routs/prodectrouts"))
 app.use('/api/carproduct',require("./routs/carproductrouts/carprdtrouts"))
+app.use("/api/wishing",require("./routs/WishingRouts"))
 
 
 

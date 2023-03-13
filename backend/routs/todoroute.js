@@ -5,9 +5,7 @@ router.use(express.json());
 const  {registeruser,loginuser} = require('../controler/todocontroler')
 router.post('/',registeruser);
 router.post('/login',loginuser)
-// router.get('/me', protect,getMe)
-// router.put('/',updateuser)
-// router.delete('/',deleteuser)
+
 
 
 
